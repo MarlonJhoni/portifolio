@@ -1,0 +1,254 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+  
+:root{
+    --branco: #fff;
+    --escuro1: #34344e;
+    --escuro2: #3a415a;
+    --escuro3: #566981;
+    --escuro4: #89a7b1;
+    --escuro5: #cbdad5;
+    --escuro6: #2f2f46;
+    --cyan1: #70e3ea;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--escuro2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--escuro3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--escuro4);
+}
+
+body {
+    background-color: var(--escuro1);
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+  
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* responsivo, ao diminuir fica um embaixo do outro*/
+    padding: 1.5rem;
+    background-color: var(--escuro6);
+    min-height: 50px; 
+}
+  
+nav{
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    list-style-type: none;
+}
+  
+.nav-links {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 10px;
+}
+  
+.nav-links:hover{
+    color: var(--escuro4);
+    transition: .4s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+  
+section{
+    padding: 4rem;
+}
+  
+.primeira-secao{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--branco);
+    letter-spacing: 8px;
+}
+  
+strong{
+    color: var(--cyan1);
+    
+}
+  
+.primeira-secao > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.primeira-secao p{
+    color: var(--branco);
+    max-width: 600px;
+    text-align: justify;
+}
+
+.btn{
+    width: 200px;
+    padding: .6rem;
+    font-size: .9rem;
+    border: 1px solid var(--branco);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--branco);
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+  
+.img-perfil{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
+  
+.segunda-secao, .quarta-secao {
+    background-color: var(--escuro2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+  
+.titulo{
+    color: var(--escuro5);
+}
+  
+.segunda-secao div ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+  
+.segunda-secao ul li{
+    color: var(--escuro4);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    list-style: none;
+}
+  
+.segunda-secao ul li:hover{
+    color: var(--escuro5);
+    transition: .4s;
+    cursor: default;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+}
+
+.terceira-secao{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.terceira-secao > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.terceira-secao > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.terceira-secao > div p{
+    max-width: 600px;
+    color: var(--branco);
+    text-align: justify;
+}
+
+.terceira-secao > div a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+#lista-projetos{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#lista-projetos a{
+    text-decoration: none;
+    color: var(--escuro3);
+    font-size: 1.5rem;
+}
+
+#lista-projetos a:hover{
+    transition: .4s;
+    color: var(--escuro4);
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+svg:hover {
+    transition: .4s;    
+    opacity: .5;
+}
