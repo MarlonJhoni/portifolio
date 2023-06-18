@@ -252,3 +252,28 @@ svg:hover {
     transition: .4s;    
     opacity: .5;
 }
+
+.box-menu{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    display: none;
+}
+
+.linha-menu{
+    background-color: var(--branco);
+    width: 50px;
+    height: 5px;
+    border-radius: 20%;
+}
+
+/* SECÃO MENU RESPONSIVO */
+
+@media(max-width: 768px) {
+    header nav {
+        display: none;
+    }
+    .box-menu{
+        display: flex;
+    }
+}
