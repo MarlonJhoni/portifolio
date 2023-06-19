@@ -258,6 +258,7 @@ svg:hover {
     flex-direction: column;
     gap: .5rem;
     display: none;
+    padding: 10px;
 }
 
 .linha-menu{
@@ -272,6 +273,10 @@ svg:hover {
 @media(max-width: 768px) {
     header nav {
         display: none;
+    }
+
+    header {
+        justify-content: flex-end;
     }
     .box-menu{
         display: flex;
